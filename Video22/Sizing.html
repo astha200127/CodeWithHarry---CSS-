@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different sizing units</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+        }
+        .one
+        {
+            color:rgb(152, 183, 245);
+            background-color: black;
+            /* width:2048px; */
+            width:80vw;
+            margin:23px auto; 
+        }
+        .container{
+            /* box-sizing: border-box; */
+            background-color: aquamarine;
+            height:80vh; /*we can also give vw*/
+            width:80vw;
+            margin:23px auto;
+        }
+        .container p{
+            font-size:1.5em; 
+            /* ye normal font-size ko utna guna multiply kar dega jitna value idya hai here 1.5 guna aur agar hum kuch aur size denge to usko 1.5 times multiply kar dega */
+        }
+        .mycont 
+        {
+            
+            box-sizing:border-box;
+            color:rgb(46, 18, 16);
+            background-color: rgb(250, 155, 231);
+            /* font-size:2rem; */
+            width:80vmin;
+           
+            margin:auto;
+        }
+        .mycont p{
+            font-size:2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">Hi i am a testing for sizzing different units.............</div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio est aliquam perferendis! Aperiam quos eius recusandae ipsam quia, dolores, laborum illo, temporibus modi cum mollitia ex dolor!</p>
+    </div>
+    <div class="mycont"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, numquam?</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, maiores doloremque molestias officia corrupti excepturi alias! Non minima cumque porro! Atque, eligendi maxime, illum itaque quidem voluptatibus cupiditate voluptate, maiores ex laudantium veritatis veniam optio expedita doloribus reiciendis totam explicabo quod dicta ducimus at incidunt quasi aliquid iste! Incidunt aliquam ipsa ex accusantium ab quae sunt deserunt, neque ut inventore consectetur eos atque repellat. Nostrum ad nam quos error corporis iste adipisci maiores accusamus modi, voluptatibus sequi ipsam, quas perferendis, reiciendis ea repudiandae quae? Animi culpa reprehenderit magni soluta voluptate explicabo repellat optio perferendis vel placeat vitae aut obcaecati dicta eos, qui omnis excepturi ratione molestias officiis cumque veniam quisquam deserunt quas. Eligendi quas inventore sed totam voluptatum ipsum accusantium.</div>
+</body>
+</html>

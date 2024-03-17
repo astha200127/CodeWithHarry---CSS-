@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element selector */
+        div{
+            background-color: rgb(210, 230, 248);
+        }
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+        /* Id selector */
+        #green{
+            background-color: green;
+        }
+        /* Child Selector */
+        span>p{
+            background-color: purple;
+        }
+        /* Descendent Selector */
+        span p
+        {
+            background-color: blue;
+        }
+        /* Universal Selector */
+        *
+        {
+            margin:0;
+            padding:0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color:yellowgreen;
+        }
+        a:link
+        {
+            color:blue;
+        }
+        a:active{
+            background-color: rgb(183, 212, 235);
+        }
+        a:hover
+        {
+            background-color: rgb(104, 160, 203);
+        }
+        p:first-child
+        {
+            background-color: orchid;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Div tag
+    </div>
+    <p class="red">Red</p>
+    <p id="green">Green</p>
+    <span>
+        <p>This is p under span</p>
+        <p>hello</p>
+        <p>hi</p>
+        <p>kaisan ba</p>
+    </span>
+
+    <a href="http://127.0.0.1:5500/2ndCode.html">My page</a>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.soa.ac.in">SOA</a>
+</body>
+</html>

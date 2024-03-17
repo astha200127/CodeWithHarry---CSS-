@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color: rgb(246, 189, 189);
+        }
+        .boxes{
+            display:flex;
+        }
+        .box1
+        {
+            height:344px;
+            width:344px;
+            background-color:brown;
+            margin:5px;
+            
+            border:2px solid green;
+        }
+        .box2
+        {
+            height:344px;
+            width:344px;
+            background-color:brown;
+            margin:5px;
+            
+            border:2px solid green;
+        }
+        @media only screen and (max-width:400px)
+        {
+            body{
+                background-color: rgb(224, 228, 20);
+            }
+            .boxes{
+                flex-direction:column;
+                background-color: rgb(9, 5, 6);;
+            }
+            .box1{
+                background-color: rgb(154, 221, 154);
+            }
+            .box2{
+                background-color: rgb(233, 161, 233);;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
